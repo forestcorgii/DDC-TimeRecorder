@@ -7,9 +7,9 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{63FC1637-45EB-48FE-B370-6C6EA47BEAA8}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>IDCSIBiometrics.My.MyApplication</StartupObject>
-    <RootNamespace>IDCSIBiometrics</RootNamespace>
-    <AssemblyName>IDCSIBiometrics</AssemblyName>
+    <StartupObject>Time_Recorder_v1.My.MyApplication</StartupObject>
+    <RootNamespace>Time_Recorder_v1</RootNamespace>
+    <AssemblyName>Time Recorder v1.0</AssemblyName>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileUpgradeFlags>
@@ -39,7 +39,7 @@
     <DebugType>full</DebugType>
     <DefineDebug>true</DefineDebug>
     <DefineTrace>false</DefineTrace>
-    <OutputPath>bin\Biometrics EXE\</OutputPath>
+    <OutputPath>..\..\..\2 - Bins\DDC-TimeRecorder\TimeRecorder\v1.0\</OutputPath>
     <DocumentationFile>
     </DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
@@ -52,7 +52,7 @@
     <DefineDebug>false</DefineDebug>
     <DefineTrace>false</DefineTrace>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>..\..\..\2 - Bins\DDC-TimeRecorder\TimeRecorder\v1.0\</OutputPath>
     <DocumentationFile>
     </DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>

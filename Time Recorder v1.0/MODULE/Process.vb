@@ -6,7 +6,7 @@ Imports System.Drawing
 Imports System.Text
 Imports System.Windows.Forms
 Imports System.IO
-Imports IDCSIBiometrics.VBNETSample
+Imports Time_Recorder_v1.VBNETSample
 Imports System.Data.OleDb
 
 Module Process

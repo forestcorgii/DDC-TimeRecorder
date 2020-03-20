@@ -7,7 +7,7 @@ Imports System.Data.OleDb
 Imports System.IO
 Imports System.Collections.Generic
 Imports System.Windows.Forms
-Imports IDCSIBiometrics.VBNETSample
+Imports Time_Recorder_v1.VBNETSample
 
 Module Threading
     Public DAYOFF As Thread

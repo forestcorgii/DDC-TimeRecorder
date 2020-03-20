@@ -63,10 +63,10 @@ Namespace My
      Global.System.Runtime.CompilerServices.CompilerGeneratedAttribute()>  _
     Friend Module MySettingsProperty
         
-        <Global.System.ComponentModel.Design.HelpKeywordAttribute("My.Settings")>  _
-        Friend ReadOnly Property Settings() As Global.IDCSIBiometrics.My.MySettings
+        <Global.System.ComponentModel.Design.HelpKeywordAttribute("My.Settings")> _
+        Friend ReadOnly Property Settings() As Global.Time_Recorder_v1.My.MySettings
             Get
-                Return Global.IDCSIBiometrics.My.MySettings.Default
+                Return Global.Time_Recorder_v1.My.MySettings.Default
             End Get
         End Property
     End Module
