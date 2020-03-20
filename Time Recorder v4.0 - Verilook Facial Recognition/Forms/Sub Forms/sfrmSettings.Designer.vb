@@ -27,8 +27,8 @@ Partial Class sfrmSettings
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.tbCompany = New ModifiedComponents.ModifiedTextbox(Me.components)
-        Me.tbCompAcro = New ModifiedComponents.ModifiedTextbox(Me.components)
+        Me.tbCompany = New CustomComponents.ModifiedTextbox(Me.components)
+        Me.tbCompAcro = New CustomComponents.ModifiedTextbox(Me.components)
         Me.Label3 = New System.Windows.Forms.Label()
         Me.btnOpenBiometricClientSettings = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -82,8 +82,8 @@ Partial Class sfrmSettings
         '
         'tbCompany
         '
-        Me.tbCompany.Character = ModifiedComponents.ModifiedTextbox.CharacterTypes.Alpha
-        Me.tbCompany.CharacterCasing = ModifiedComponents.ModifiedTextbox.charCases.Upper
+        Me.tbCompany.Character = CustomComponents.ModifiedTextbox.CharacterTypes.Alpha
+        Me.tbCompany.CharacterCasing = CustomComponents.ModifiedTextbox.charCases.Upper
         Me.tbCompany.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbCompany.Location = New System.Drawing.Point(6, 43)
         Me.tbCompany.Name = "tbCompany"
@@ -94,8 +94,8 @@ Partial Class sfrmSettings
         '
         'tbCompAcro
         '
-        Me.tbCompAcro.Character = ModifiedComponents.ModifiedTextbox.CharacterTypes.Alpha
-        Me.tbCompAcro.CharacterCasing = ModifiedComponents.ModifiedTextbox.charCases.Upper
+        Me.tbCompAcro.Character = CustomComponents.ModifiedTextbox.CharacterTypes.Alpha
+        Me.tbCompAcro.CharacterCasing = CustomComponents.ModifiedTextbox.charCases.Upper
         Me.tbCompAcro.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tbCompAcro.Location = New System.Drawing.Point(278, 43)
         Me.tbCompAcro.Name = "tbCompAcro"
@@ -190,8 +190,8 @@ Partial Class sfrmSettings
 
     End Sub
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
-    Friend WithEvents tbCompany As ModifiedComponents.ModifiedTextbox
-    Friend WithEvents tbCompAcro As ModifiedComponents.ModifiedTextbox
+    Friend WithEvents tbCompany As CustomComponents.ModifiedTextbox
+    Friend WithEvents tbCompAcro As CustomComponents.ModifiedTextbox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents btnSave As System.Windows.Forms.Button

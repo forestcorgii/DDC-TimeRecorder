@@ -39,7 +39,7 @@ Partial Class frmMain
         Me.lbCompany = New System.Windows.Forms.Label()
         Me.lbDate = New System.Windows.Forms.Label()
         Me.lbTime = New System.Windows.Forms.Label()
-        Me.tbID = New ModifiedComponents.ModifiedTextbox(Me.components)
+        Me.tbID = New CustomComponents.ModifiedTextbox(Me.components)
         Me.dgv = New System.Windows.Forms.DataGridView()
         Me.empName = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.dgvrDept = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -158,8 +158,8 @@ Partial Class frmMain
         '
         Me.tbID.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.tbID.BackColor = System.Drawing.Color.GhostWhite
-        Me.tbID.Character = ModifiedComponents.ModifiedTextbox.CharacterTypes.Numeric
-        Me.tbID.CharacterCasing = ModifiedComponents.ModifiedTextbox.charCases.Normal
+        Me.tbID.Character = CustomComponents.ModifiedTextbox.CharacterTypes.Numeric
+        Me.tbID.CharacterCasing = CustomComponents.ModifiedTextbox.charCases.Normal
         Me.tbID.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold)
         Me.tbID.ForeColor = System.Drawing.Color.Black
         Me.tbID.Location = New System.Drawing.Point(697, 120)
@@ -396,7 +396,7 @@ End Sub
     Friend WithEvents lbCompany As System.Windows.Forms.Label
     Friend WithEvents lbDate As System.Windows.Forms.Label
     Friend WithEvents lbTime As System.Windows.Forms.Label
-    Friend WithEvents tbID As ModifiedComponents.ModifiedTextbox
+    Friend WithEvents tbID As CustomComponents.ModifiedTextbox
     Friend WithEvents dgv As System.Windows.Forms.DataGridView
     Friend WithEvents btnProfiles As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents btnExporter As System.Windows.Forms.ToolStripMenuItem

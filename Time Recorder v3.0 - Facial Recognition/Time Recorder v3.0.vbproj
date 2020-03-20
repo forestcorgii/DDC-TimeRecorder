@@ -11,7 +11,7 @@
     <AssemblyName>Time Recorder v3.0</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -62,9 +62,6 @@
     </Reference>
     <Reference Include="EntityFramework.SqlServer">
       <HintPath>..\..\..\DOWNLOADED\DLLs\SQLite\EntityFramework.6.0.2\lib\net45\EntityFramework.SqlServer.dll</HintPath>
-    </Reference>
-    <Reference Include="ModifiedComponents">
-      <HintPath>..\..\ModifiedComponents\ModifiedComponents\bin\Release\ModifiedComponents.dll</HintPath>
     </Reference>
     <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="Neurotec.Biometrics.Nffv">
@@ -314,6 +311,12 @@
     <Content Include="DDC LOGO_RED.ico" />
     <None Include="Resources\cancel-button.png" />
     <None Include="Resources\check-mark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Custom-Components\Custom-Components\Custom-Components.vbproj">
+      <Project>{669caf4c-9826-427b-a4a4-9f46077ed21f}</Project>
+      <Name>Custom-Components</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -48,35 +48,45 @@
     <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
-    <Reference Include="Neurotec">
-      <HintPath>..\DATA\verilook libs\Neurotec.dll</HintPath>
+    <Reference Include="Neurotec, Version=11.1.0.0, Culture=neutral, PublicKeyToken=ea4ecf06177ea613, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\2 - Bins\DDC-TimeRecorder\DATA\verilook libs\Neurotec.dll</HintPath>
     </Reference>
-    <Reference Include="Neurotec.Accelerator.Admin.Rest">
-      <HintPath>..\DATA\verilook libs\Neurotec.Accelerator.Admin.Rest.dll</HintPath>
+    <Reference Include="Neurotec.Accelerator.Admin.Rest, Version=11.1.0.0, Culture=neutral, PublicKeyToken=ea4ecf06177ea613, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\2 - Bins\DDC-TimeRecorder\DATA\verilook libs\Neurotec.Accelerator.Admin.Rest.dll</HintPath>
     </Reference>
-    <Reference Include="Neurotec.Biometrics">
-      <HintPath>..\DATA\verilook libs\Neurotec.Biometrics.dll</HintPath>
+    <Reference Include="Neurotec.Biometrics, Version=11.1.0.0, Culture=neutral, PublicKeyToken=ea4ecf06177ea613, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\2 - Bins\DDC-TimeRecorder\DATA\verilook libs\Neurotec.Biometrics.dll</HintPath>
     </Reference>
-    <Reference Include="Neurotec.Biometrics.Client">
-      <HintPath>..\DATA\verilook libs\Neurotec.Biometrics.Client.dll</HintPath>
+    <Reference Include="Neurotec.Biometrics.Client, Version=11.1.0.0, Culture=neutral, PublicKeyToken=ea4ecf06177ea613, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\2 - Bins\DDC-TimeRecorder\DATA\verilook libs\Neurotec.Biometrics.Client.dll</HintPath>
     </Reference>
-    <Reference Include="Neurotec.Biometrics.Gui">
-      <HintPath>..\DATA\verilook libs\Neurotec.Biometrics.Gui.dll</HintPath>
+    <Reference Include="Neurotec.Biometrics.Gui, Version=11.1.0.0, Culture=neutral, PublicKeyToken=ea4ecf06177ea613, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\2 - Bins\DDC-TimeRecorder\DATA\verilook libs\Neurotec.Biometrics.Gui.dll</HintPath>
     </Reference>
-    <Reference Include="Neurotec.Devices">
-      <HintPath>..\DATA\verilook libs\Neurotec.Devices.dll</HintPath>
+    <Reference Include="Neurotec.Devices, Version=11.1.0.0, Culture=neutral, PublicKeyToken=ea4ecf06177ea613, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\2 - Bins\DDC-TimeRecorder\DATA\verilook libs\Neurotec.Devices.dll</HintPath>
     </Reference>
-    <Reference Include="Neurotec.Gui">
-      <HintPath>..\DATA\verilook libs\Neurotec.Gui.dll</HintPath>
+    <Reference Include="Neurotec.Gui, Version=11.1.0.0, Culture=neutral, PublicKeyToken=ea4ecf06177ea613, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\2 - Bins\DDC-TimeRecorder\DATA\verilook libs\Neurotec.Gui.dll</HintPath>
     </Reference>
-    <Reference Include="Neurotec.Licensing">
-      <HintPath>..\DATA\verilook libs\Neurotec.Licensing.dll</HintPath>
+    <Reference Include="Neurotec.Licensing, Version=11.1.0.0, Culture=neutral, PublicKeyToken=ea4ecf06177ea613, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\2 - Bins\DDC-TimeRecorder\DATA\verilook libs\Neurotec.Licensing.dll</HintPath>
     </Reference>
-    <Reference Include="Neurotec.Media">
-      <HintPath>..\DATA\verilook libs\Neurotec.Media.dll</HintPath>
+    <Reference Include="Neurotec.Media, Version=11.1.0.0, Culture=neutral, PublicKeyToken=ea4ecf06177ea613, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\2 - Bins\DDC-TimeRecorder\DATA\verilook libs\Neurotec.Media.dll</HintPath>
     </Reference>
-    <Reference Include="Neurotec.Media.Processing">
-      <HintPath>..\DATA\verilook libs\Neurotec.Media.Processing.dll</HintPath>
+    <Reference Include="Neurotec.Media.Processing, Version=11.1.0.0, Culture=neutral, PublicKeyToken=ea4ecf06177ea613, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\2 - Bins\DDC-TimeRecorder\DATA\verilook libs\Neurotec.Media.Processing.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />

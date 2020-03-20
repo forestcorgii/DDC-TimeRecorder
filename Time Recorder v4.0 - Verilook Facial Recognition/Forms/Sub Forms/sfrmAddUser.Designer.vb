@@ -34,13 +34,13 @@
             Me.cbSched = New System.Windows.Forms.ComboBox()
             Me.Label10 = New System.Windows.Forms.Label()
             Me.cbAdmin = New System.Windows.Forms.CheckBox()
-            Me.tbFname = New ModifiedComponents.ModifiedTextbox(Me.components)
-            Me.tbEmpNum = New ModifiedComponents.ModifiedTextbox(Me.components)
+            Me.tbFname = New CustomComponents.ModifiedTextbox(Me.components)
+            Me.tbEmpNum = New CustomComponents.ModifiedTextbox(Me.components)
             Me.Label7 = New System.Windows.Forms.Label()
             Me.cbCompBranch = New System.Windows.Forms.ComboBox()
-            Me.tbLname = New ModifiedComponents.ModifiedTextbox(Me.components)
+            Me.tbLname = New CustomComponents.ModifiedTextbox(Me.components)
             Me.Label9 = New System.Windows.Forms.Label()
-            Me.tbMname = New ModifiedComponents.ModifiedTextbox(Me.components)
+            Me.tbMname = New CustomComponents.ModifiedTextbox(Me.components)
             Me.cbDept = New System.Windows.Forms.ComboBox()
             Me.Label6 = New System.Windows.Forms.Label()
             Me.Label5 = New System.Windows.Forms.Label()
@@ -184,8 +184,8 @@
             '
             Me.tbFname.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
                 Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-            Me.tbFname.Character = ModifiedComponents.ModifiedTextbox.CharacterTypes.Alpha
-            Me.tbFname.CharacterCasing = ModifiedComponents.ModifiedTextbox.charCases.Upper
+            Me.tbFname.Character = CustomComponents.ModifiedTextbox.CharacterTypes.Alpha
+            Me.tbFname.CharacterCasing = CustomComponents.ModifiedTextbox.charCases.Upper
             Me.tbFname.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
             Me.tbFname.Location = New System.Drawing.Point(105, 160)
             Me.tbFname.Name = "tbFname"
@@ -198,8 +198,8 @@
             '
             Me.tbEmpNum.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
                 Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-            Me.tbEmpNum.Character = ModifiedComponents.ModifiedTextbox.CharacterTypes.AlphaNumeric
-            Me.tbEmpNum.CharacterCasing = ModifiedComponents.ModifiedTextbox.charCases.Upper
+            Me.tbEmpNum.Character = CustomComponents.ModifiedTextbox.CharacterTypes.AlphaNumeric
+            Me.tbEmpNum.CharacterCasing = CustomComponents.ModifiedTextbox.charCases.Upper
             Me.tbEmpNum.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
             Me.tbEmpNum.Location = New System.Drawing.Point(140, 269)
             Me.tbEmpNum.Name = "tbEmpNum"
@@ -237,8 +237,8 @@
             '
             Me.tbLname.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
                 Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-            Me.tbLname.Character = ModifiedComponents.ModifiedTextbox.CharacterTypes.Alpha
-            Me.tbLname.CharacterCasing = ModifiedComponents.ModifiedTextbox.charCases.Upper
+            Me.tbLname.Character = CustomComponents.ModifiedTextbox.CharacterTypes.Alpha
+            Me.tbLname.CharacterCasing = CustomComponents.ModifiedTextbox.charCases.Upper
             Me.tbLname.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
             Me.tbLname.Location = New System.Drawing.Point(105, 190)
             Me.tbLname.Name = "tbLname"
@@ -261,8 +261,8 @@
             '
             Me.tbMname.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
                 Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-            Me.tbMname.Character = ModifiedComponents.ModifiedTextbox.CharacterTypes.Alpha
-            Me.tbMname.CharacterCasing = ModifiedComponents.ModifiedTextbox.charCases.Upper
+            Me.tbMname.Character = CustomComponents.ModifiedTextbox.CharacterTypes.Alpha
+            Me.tbMname.CharacterCasing = CustomComponents.ModifiedTextbox.charCases.Upper
             Me.tbMname.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
             Me.tbMname.Location = New System.Drawing.Point(105, 219)
             Me.tbMname.Name = "tbMname"
@@ -359,13 +359,13 @@
         End Sub
         Friend WithEvents btnSave As System.Windows.Forms.Button
         Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
-        Friend WithEvents tbFname As ModifiedComponents.ModifiedTextbox
-        Friend WithEvents tbEmpNum As ModifiedComponents.ModifiedTextbox
+        Friend WithEvents tbFname As CustomComponents.ModifiedTextbox
+        Friend WithEvents tbEmpNum As CustomComponents.ModifiedTextbox
         Friend WithEvents Label7 As System.Windows.Forms.Label
         Friend WithEvents cbCompBranch As System.Windows.Forms.ComboBox
-        Friend WithEvents tbLname As ModifiedComponents.ModifiedTextbox
+        Friend WithEvents tbLname As CustomComponents.ModifiedTextbox
         Friend WithEvents Label9 As System.Windows.Forms.Label
-        Friend WithEvents tbMname As ModifiedComponents.ModifiedTextbox
+        Friend WithEvents tbMname As CustomComponents.ModifiedTextbox
         Friend WithEvents cbDept As System.Windows.Forms.ComboBox
         Friend WithEvents Label6 As System.Windows.Forms.Label
         Friend WithEvents Label5 As System.Windows.Forms.Label

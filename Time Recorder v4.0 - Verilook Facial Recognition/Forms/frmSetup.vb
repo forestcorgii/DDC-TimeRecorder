@@ -1,6 +1,5 @@
 ﻿Imports System.IO
 Imports VerilookLib
-
 Namespace AddingUser
     Public Class frmSetup
         Public NewUserDB As UserRecord

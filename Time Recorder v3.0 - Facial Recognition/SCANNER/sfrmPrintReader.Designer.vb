@@ -26,7 +26,7 @@ Partial Class sfrmPrintReader
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(sfrmPrintReader))
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.pb1 = New ModifiedComponents.ArcProgressbar()
+        Me.pb1 = New CustomComponents.ArcProgressbar()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -59,7 +59,7 @@ Partial Class sfrmPrintReader
         Me.pb1.Location = New System.Drawing.Point(56, 94)
         Me.pb1.Margin = New System.Windows.Forms.Padding(0)
         Me.pb1.MarqueeSpeed = 1
-        Me.pb1.MarqueeType = ModifiedComponents.ArcProgressbar.mrqType.Process2
+        Me.pb1.MarqueeType = CustomComponents.ArcProgressbar.mrqType.Process2
         Me.pb1.MaxValue = 600.0R
         Me.pb1.MinimumSize = New System.Drawing.Size(50, 50)
         Me.pb1.Name = "pb1"
@@ -71,7 +71,7 @@ Partial Class sfrmPrintReader
         Me.pb1.ProcessForeColor = System.Drawing.Color.Maroon
         Me.pb1.ProcessMargin = 10
         Me.pb1.ProgressTextEnable = False
-        Me.pb1.ProgressType = ModifiedComponents.ArcProgressbar.pType.WithValue
+        Me.pb1.ProgressType = CustomComponents.ArcProgressbar.pType.WithValue
         Me.pb1.Size = New System.Drawing.Size(150, 150)
         Me.pb1.startAngle = 0.0!
         Me.pb1.StartMarquee = True
@@ -97,6 +97,6 @@ Partial Class sfrmPrintReader
     End Sub
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents pb1 As ModifiedComponents.ArcProgressbar
+    Friend WithEvents pb1 As CustomComponents.ArcProgressbar
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
 End Class

@@ -1,0 +1,80 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Time Recorder v2.0", "Time Recorder v2.0\Time Recorder v2.0.vbproj", "{3F9D283D-7BCD-47FB-844A-B7B3D493735B}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Time Recorder v3.0", "Time Recorder v3.0 - Facial Recognition\Time Recorder v3.0.vbproj", "{7975FE52-3334-40A3-952F-1CC4BD289374}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "VerilookLib", "VerilookLib\VerilookLib.vbproj", "{8F0C2904-18CF-4CD6-BA8B-4132542A49F3}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Time Recorder v4.0", "Time Recorder v4.0 - Verilook Facial Recognition\Time Recorder v4.0.vbproj", "{41A952B2-D8B8-40F7-A4EC-9DAB72B1B779}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Verilook", "Verilook", "{14AC1FE4-86B0-41C9-9100-07E2483AD64D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Etc", "Etc", "{4155A4AA-E98F-4A61-8E87-649B23967821}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Time Recorder Previous Version", "Time Recorder Previous Version", "{5E37FDCB-91B1-49A1-B56B-8DAFE47D78B4}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SEAN", "..\Libraries\SEAN\SEAN.vbproj", "{EB98C6FB-8D9D-42CB-8B8E-CD13BD8BFF3C}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Payroll-Sender", "Payroll-Sender\Payroll-Sender.vbproj", "{ED45B87A-9943-40A5-9A01-BB86A7D230AF}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Timelog-Sender", "Timelog-Sender\Timelog-Sender.vbproj", "{1C553BF7-9151-4539-B925-34DFD92EEFEA}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Custom-Components", "..\Custom-Components\Custom-Components\Custom-Components.vbproj", "{669CAF4C-9826-427B-A4A4-9F46077ED21F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F9D283D-7BCD-47FB-844A-B7B3D493735B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F9D283D-7BCD-47FB-844A-B7B3D493735B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F9D283D-7BCD-47FB-844A-B7B3D493735B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F9D283D-7BCD-47FB-844A-B7B3D493735B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7975FE52-3334-40A3-952F-1CC4BD289374}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7975FE52-3334-40A3-952F-1CC4BD289374}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7975FE52-3334-40A3-952F-1CC4BD289374}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7975FE52-3334-40A3-952F-1CC4BD289374}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F0C2904-18CF-4CD6-BA8B-4132542A49F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F0C2904-18CF-4CD6-BA8B-4132542A49F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F0C2904-18CF-4CD6-BA8B-4132542A49F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F0C2904-18CF-4CD6-BA8B-4132542A49F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41A952B2-D8B8-40F7-A4EC-9DAB72B1B779}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41A952B2-D8B8-40F7-A4EC-9DAB72B1B779}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41A952B2-D8B8-40F7-A4EC-9DAB72B1B779}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41A952B2-D8B8-40F7-A4EC-9DAB72B1B779}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB98C6FB-8D9D-42CB-8B8E-CD13BD8BFF3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB98C6FB-8D9D-42CB-8B8E-CD13BD8BFF3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB98C6FB-8D9D-42CB-8B8E-CD13BD8BFF3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB98C6FB-8D9D-42CB-8B8E-CD13BD8BFF3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED45B87A-9943-40A5-9A01-BB86A7D230AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED45B87A-9943-40A5-9A01-BB86A7D230AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED45B87A-9943-40A5-9A01-BB86A7D230AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED45B87A-9943-40A5-9A01-BB86A7D230AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C553BF7-9151-4539-B925-34DFD92EEFEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C553BF7-9151-4539-B925-34DFD92EEFEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C553BF7-9151-4539-B925-34DFD92EEFEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C553BF7-9151-4539-B925-34DFD92EEFEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{669CAF4C-9826-427B-A4A4-9F46077ED21F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{669CAF4C-9826-427B-A4A4-9F46077ED21F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{669CAF4C-9826-427B-A4A4-9F46077ED21F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{669CAF4C-9826-427B-A4A4-9F46077ED21F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7975FE52-3334-40A3-952F-1CC4BD289374} = {5E37FDCB-91B1-49A1-B56B-8DAFE47D78B4}
+		{3F9D283D-7BCD-47FB-844A-B7B3D493735B} = {5E37FDCB-91B1-49A1-B56B-8DAFE47D78B4}
+		{EB98C6FB-8D9D-42CB-8B8E-CD13BD8BFF3C} = {4155A4AA-E98F-4A61-8E87-649B23967821}
+		{669CAF4C-9826-427B-A4A4-9F46077ED21F} = {4155A4AA-E98F-4A61-8E87-649B23967821}
+		{8F0C2904-18CF-4CD6-BA8B-4132542A49F3} = {14AC1FE4-86B0-41C9-9100-07E2483AD64D}
+		{41A952B2-D8B8-40F7-A4EC-9DAB72B1B779} = {14AC1FE4-86B0-41C9-9100-07E2483AD64D}
+		{ED45B87A-9943-40A5-9A01-BB86A7D230AF} = {14AC1FE4-86B0-41C9-9100-07E2483AD64D}
+		{1C553BF7-9151-4539-B925-34DFD92EEFEA} = {14AC1FE4-86B0-41C9-9100-07E2483AD64D}
+	EndGlobalSection
+EndGlobal

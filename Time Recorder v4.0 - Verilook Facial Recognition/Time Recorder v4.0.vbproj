@@ -20,7 +20,7 @@
     <DebugType>full</DebugType>
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\..\..\2 - Bins\DDC-TimeRecorder\Timelog-Sender\Debug\</OutputPath>
     <DocumentationFile>
     </DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
@@ -32,7 +32,7 @@
     <DefineDebug>false</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>..\..\..\2 - Bins\DDC-TimeRecorder\Timelog-Sender\Release\</OutputPath>
     <DocumentationFile>
     </DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
@@ -63,49 +63,36 @@
     <Reference Include="EntityFramework.SqlServer">
       <HintPath>..\..\..\DOWNLOADED\DLLs\SQLite\EntityFramework.6.0.2\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
-    <Reference Include="ModifiedComponents">
-      <HintPath>..\..\ModifiedComponents\ModifiedComponents\bin\Release\ModifiedComponents.dll</HintPath>
-    </Reference>
     <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
-    <Reference Include="Neurotec, Version=11.1.0.0, Culture=neutral, PublicKeyToken=ea4ecf06177ea613, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\DATA\verilook libs\Neurotec.dll</HintPath>
+    <Reference Include="Neurotec">
+      <HintPath>..\..\..\2 - Bins\DDC-TimeRecorder\DATA\verilook libs\Neurotec.dll</HintPath>
     </Reference>
-    <Reference Include="Neurotec.Accelerator.Admin.Rest, Version=11.1.0.0, Culture=neutral, PublicKeyToken=ea4ecf06177ea613, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\DATA\verilook libs\Neurotec.Accelerator.Admin.Rest.dll</HintPath>
+    <Reference Include="Neurotec.Accelerator.Admin.Rest">
+      <HintPath>..\..\..\2 - Bins\DDC-TimeRecorder\DATA\verilook libs\Neurotec.Accelerator.Admin.Rest.dll</HintPath>
     </Reference>
-    <Reference Include="Neurotec.Biometrics, Version=11.1.0.0, Culture=neutral, PublicKeyToken=ea4ecf06177ea613, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\DATA\verilook libs\Neurotec.Biometrics.dll</HintPath>
+    <Reference Include="Neurotec.Biometrics">
+      <HintPath>..\..\..\2 - Bins\DDC-TimeRecorder\DATA\verilook libs\Neurotec.Biometrics.dll</HintPath>
     </Reference>
-    <Reference Include="Neurotec.Biometrics.Client, Version=11.1.0.0, Culture=neutral, PublicKeyToken=ea4ecf06177ea613, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\DATA\verilook libs\Neurotec.Biometrics.Client.dll</HintPath>
+    <Reference Include="Neurotec.Biometrics.Client">
+      <HintPath>..\..\..\2 - Bins\DDC-TimeRecorder\DATA\verilook libs\Neurotec.Biometrics.Client.dll</HintPath>
     </Reference>
-    <Reference Include="Neurotec.Biometrics.Gui, Version=11.1.0.0, Culture=neutral, PublicKeyToken=ea4ecf06177ea613, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\DATA\verilook libs\Neurotec.Biometrics.Gui.dll</HintPath>
+    <Reference Include="Neurotec.Biometrics.Gui">
+      <HintPath>..\..\..\2 - Bins\DDC-TimeRecorder\DATA\verilook libs\Neurotec.Biometrics.Gui.dll</HintPath>
     </Reference>
-    <Reference Include="Neurotec.Devices, Version=11.1.0.0, Culture=neutral, PublicKeyToken=ea4ecf06177ea613, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\DATA\verilook libs\Neurotec.Devices.dll</HintPath>
+    <Reference Include="Neurotec.Devices">
+      <HintPath>..\..\..\2 - Bins\DDC-TimeRecorder\DATA\verilook libs\Neurotec.Devices.dll</HintPath>
     </Reference>
-    <Reference Include="Neurotec.Gui, Version=11.1.0.0, Culture=neutral, PublicKeyToken=ea4ecf06177ea613, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\DATA\verilook libs\Neurotec.Gui.dll</HintPath>
+    <Reference Include="Neurotec.Gui">
+      <HintPath>..\..\..\2 - Bins\DDC-TimeRecorder\DATA\verilook libs\Neurotec.Gui.dll</HintPath>
     </Reference>
-    <Reference Include="Neurotec.Licensing, Version=11.1.0.0, Culture=neutral, PublicKeyToken=ea4ecf06177ea613, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\DATA\verilook libs\Neurotec.Licensing.dll</HintPath>
+    <Reference Include="Neurotec.Licensing">
+      <HintPath>..\..\..\2 - Bins\DDC-TimeRecorder\DATA\verilook libs\Neurotec.Licensing.dll</HintPath>
     </Reference>
-    <Reference Include="Neurotec.Media, Version=11.1.0.0, Culture=neutral, PublicKeyToken=ea4ecf06177ea613, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\DATA\verilook libs\Neurotec.Media.dll</HintPath>
+    <Reference Include="Neurotec.Media">
+      <HintPath>..\..\..\2 - Bins\DDC-TimeRecorder\DATA\verilook libs\Neurotec.Media.dll</HintPath>
     </Reference>
-    <Reference Include="Neurotec.Media.Processing, Version=11.1.0.0, Culture=neutral, PublicKeyToken=ea4ecf06177ea613, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\DATA\verilook libs\Neurotec.Media.Processing.dll</HintPath>
+    <Reference Include="Neurotec.Media.Processing">
+      <HintPath>..\..\..\2 - Bins\DDC-TimeRecorder\DATA\verilook libs\Neurotec.Media.Processing.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -299,6 +286,10 @@
     <None Include="Resources\check-mark.png" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Custom-Components\Custom-Components\Custom-Components.vbproj">
+      <Project>{669caf4c-9826-427b-a4a4-9f46077ed21f}</Project>
+      <Name>Custom-Components</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Libraries\SEAN\SEAN.vbproj">
       <Project>{eb98c6fb-8d9d-42cb-8b8e-cd13bd8bff3c}</Project>
       <Name>SEAN</Name>

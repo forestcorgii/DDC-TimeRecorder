@@ -1,0 +1,791 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+AnalogClockControl
+</name>
+</assembly>
+<members>
+<member name="T:AnalogClock.BorderStyles">
+	<summary>
+ Represents border-style enumeration for AnalogClock.Clock control.
+ </summary>
+</member><member name="P:AnalogClock.Clock.HourHand">
+	<summary>
+ Gets clock's hour-hand object.
+ </summary>
+</member><member name="P:AnalogClock.Clock.MinuteHand">
+	<summary>
+ Gets clock's minute-hand object.
+ </summary>
+</member><member name="P:AnalogClock.Clock.SecondHand">
+	<summary>
+ Gets clock's second-hand object.
+ </summary>
+</member><member name="P:AnalogClock.Clock.CenterPoint">
+	<summary>
+ Gets clock's center-point object.
+ </summary>
+</member><member name="P:AnalogClock.Clock.BigMarkers">
+	<summary>
+ Gets or sets the clock's big-marker array.
+ </summary>
+</member><member name="P:AnalogClock.Clock.SmallMarkers">
+	<summary>
+ Gets or sets the clock's small-marker array.
+ </summary>
+</member><member name="P:AnalogClock.Clock.Symbols">
+	<summary>
+ Gets or sets the clock's symbol array.
+ </summary>
+</member><member name="P:AnalogClock.Clock.UtcOffset">
+	<summary>
+ Gets or sets the clock's Coordinated Universal Time (UTC) offset.
+ </summary>
+</member><member name="P:AnalogClock.Clock.FrameColor">
+	<summary>
+ Gets or sets the clock's frame color.
+ </summary>
+</member><member name="P:AnalogClock.Clock.Running">
+	<summary>
+ Gets or sets a value indicating whether the clock is running.
+ </summary>
+</member><member name="P:AnalogClock.Clock.BorderStyle">
+	<summary>
+ Gets or sets the clock's border style.
+ </summary>
+</member><member name="P:AnalogClock.Clock.UpdateFrequency">
+	<summary>
+ Gets or sets the clock's update frequency (in milliseconds).
+ </summary>
+</member><member name="P:AnalogClock.Clock.Value">
+	<summary>
+ Gets the clock's date and time object.
+ </summary>
+</member><member name="P:AnalogClock.Clock.Rectangle">
+	<summary>
+ Gets clock's drawing rectangle.
+ </summary>
+</member><member name="P:AnalogClock.Clock.Radius">
+	<summary>
+ Gets clock's radius.
+ </summary>
+</member><member name="P:AnalogClock.Clock.Initialized">
+	<summary>
+ Gets a value that indicates whether the clock has been initialized.
+ </summary>
+</member><member name="M:AnalogClock.Clock.GetPoint(System.Drawing.PointF,System.Double,System.Single)">
+	<summary>
+ Calculates and returns a point in the clock's cordinates.
+ </summary>
+	<param name="startPoint">A starting point in the clock’s 
+ area from which the point should be calculated.</param>
+	<param name="angle">An angle from x-axis (in radins).</param>
+	<param name="radius">The distans from the starting point to the point.</param>
+</member><member name="M:AnalogClock.Clock.UpdateTime">
+	<summary>
+ Updates the clock's hands.
+ </summary>
+</member><member name="M:AnalogClock.Clock.SetClockRectangle">
+	<summary>
+ Sets the clock's rectangle and radius.
+ </summary>
+</member><member name="M:AnalogClock.Clock.SetClockRegion">
+	<summary>
+ Sets the clock's region.
+ </summary>
+</member><member name="M:AnalogClock.Clock.InitalizeBigMarkers(AnalogClock.Marker[])">
+	<summary>
+ Initalizes the clock's big-markers by adding event handlers and updating the base-path.
+ </summary>
+	<param name="markerArray">An array of AnalogClock.Marker object.</param>
+</member><member name="M:AnalogClock.Clock.InitalizeSmallMarkers(AnalogClock.Marker[])">
+	<summary>
+ Initalizes the clock's small-markers by adding event handlers and updating the base-path.
+ </summary>
+	<param name="markerArray">An array of AnalogClock.Marker object.</param>
+</member><member name="M:AnalogClock.Clock.InitalizeSymbols(AnalogClock.Symbol[])">
+	<summary>
+ Initalizes the clock's symbols by adding event handlers.
+ </summary>
+	<param name="symbolArray">An array of AnalogClock.Symbol object.</param>
+</member><member name="M:AnalogClock.Clock.OnPaint(System.Windows.Forms.PaintEventArgs)">
+	<summary>
+ Raises the System.Windows.Forms.Control.Paint event.
+ </summary>
+</member><member name="M:AnalogClock.Clock.OnBackgroundPaint(System.Windows.Forms.PaintEventArgs)">
+	<summary>
+ Raises the AnalogClock.Clock.BackgroundPaint event.
+ </summary>
+	<param name="e">A System.Windows.Forms.PaintEventArgs
+ that contains the event data.</param>
+</member><member name="M:AnalogClock.Clock.OnSmallMarkersPainted(System.Windows.Forms.PaintEventArgs)">
+	<summary>
+ Raises the AnalogClock.Clock.SmallMarkersPainted event.
+ </summary>
+	<param name="e">A System.Windows.Forms.PaintEventArgs
+ that contains the event data.</param>
+</member><member name="M:AnalogClock.Clock.OnBigMarkersPainted(System.Windows.Forms.PaintEventArgs)">
+	<summary>
+ Raises the AnalogClock.Clock.BigMarkersPainted event.
+ </summary>
+	<param name="e">A System.Windows.Forms.PaintEventArgs
+ that contains the event data.</param>
+</member><member name="M:AnalogClock.Clock.OnSymbolsPainted(System.Windows.Forms.PaintEventArgs)">
+	<summary>
+ Raises the AnalogClock.Clock.SymbolssPainted event.
+ </summary>
+	<param name="e">A System.Windows.Forms.PaintEventArgs
+ that contains the event data.</param>
+</member><member name="M:AnalogClock.Clock.OnFramePainting(System.Windows.Forms.PaintEventArgs)">
+	<summary>
+ Raises the AnalogClock.Clock.FramePainting event.
+ </summary>
+	<param name="e">A System.Windows.Forms.PaintEventArgs
+ that contains the event data.</param>
+</member><member name="M:AnalogClock.Clock.OnFramePainted(System.Windows.Forms.PaintEventArgs)">
+	<summary>
+ Raises the AnalogClock.Clock.FramePainted event.
+ </summary>
+	<param name="e">A System.Windows.Forms.PaintEventArgs
+ that contains the event data.</param>
+</member><member name="M:AnalogClock.Clock.OnResize(System.EventArgs)">
+	<summary>
+ Raises the System.Windows.Forms.Control.Resize event.
+ </summary>
+	<param name="e">A System.EventArgs
+ that contains the event data.</param>
+</member><member name="M:AnalogClock.Clock.OnTimeChanged(System.EventArgs)">
+	<summary>
+ Raises the AnalogClock.Clock.TimeChanged event.
+ </summary>
+	<param name="e">A System.EventArgs
+ that contains the event data.</param>
+</member><member name="M:AnalogClock.Clock.OnUtcChanged(System.EventArgs)">
+	<summary>
+ Raises the AnalogClock.Clock.UtcChanged event.
+ </summary>
+	<param name="e">A System.EventArgs
+ that contains the event data.</param>
+</member><member name="M:AnalogClock.Clock.OnFrameColorChanged(System.EventArgs)">
+	<summary>
+ Raises the AnalogClock.Clock.FrameColorChanged event.
+ </summary>
+	<param name="e">A System.EventArgs
+ that contains the event data.</param>
+</member><member name="M:AnalogClock.Clock.OnBorderStyleChanged(System.EventArgs)">
+	<summary>
+ Raises the AnalogClock.Clock.BorderStyleChanged event.
+ </summary>
+	<param name="e">A System.EventArgs
+ that contains the event data.</param>
+</member><member name="M:AnalogClock.Clock.OnUpdateFrequencyChanged(System.EventArgs)">
+	<summary>
+ Raises the AnalogClock.Clock.UpdateFrequencyChanged event.
+ </summary>
+	<param name="e">A System.EventArgs
+ that contains the event data.</param>
+</member><member name="M:AnalogClock.Clock.OnClockRunningChanged(System.EventArgs)">
+	<summary>
+ Raises the AnalogClock.Clock.ClockRunningChanged event.
+ </summary>
+	<param name="e">A System.EventArgs
+ that contains the event data.</param>
+</member><member name="T:AnalogClock.Clock">
+	<summary>
+ Represents a AnalogClock.Clock control for windows.
+ </summary>
+</member><member name="T:AnalogClock.SymbolConverter">
+	<summary>
+ Provides a type converter for the AnalogClock.Symbol.
+ </summary>
+</member><member name="T:AnalogClock.MarkerStyle">
+	<summary>
+ Represents AnalogClock.MarkerStyle enumeration for AnalogClock.Marker object.
+ </summary>
+</member><member name="P:AnalogClock.Marker.PaintAttributes">
+	<summary>
+ Gets or sets the paint attributes of the element.
+ </summary>
+</member><member name="P:AnalogClock.Marker.SmoothMode">
+	<summary>
+ Gets or sets the smoothing mode of the element.
+ </summary>
+</member><member name="P:AnalogClock.Marker.RelativeLength">
+	<summary>
+ Gets or sets the element's relative-length that is directly proportional to its radius.
+ </summary>
+</member><member name="P:AnalogClock.Marker.Width">
+	<summary>
+ Gets or sets the element's width.
+ </summary>
+</member><member name="P:AnalogClock.Marker.Style">
+	<summary>
+ Gets or sets the element's style. If the style is 'Custom', 
+ than related 'AnalogClock.CustomElementRequest' event should be handled.
+ </summary>
+</member><member name="P:AnalogClock.Marker.Length">
+	<summary>
+ Gets the element's length.
+ </summary>
+</member><member name="P:AnalogClock.Marker.Path">
+	<summary>
+ Gets the element's graphics path.
+ </summary>
+</member><member name="M:AnalogClock.Marker.#ctor(System.String,System.Single,System.Single,System.Single,System.Drawing.Color,System.Single,System.Single)">
+	<param name="name">The name of the element.</param>
+	<param name="angle">The angle of the element in degrees.</param>
+	<param name="clockRadius">The cluck's radius for the element.</param>
+	<param name="col">The color of the element.</param>
+	<param name="width">The width of the element.</param>
+	<param name="relativeLength">The relative length of the 
+ element that is directly proportional to its radius.</param>
+	<param name="relativeRadius">The relative radius of the 
+ element that is directly proportional to the clock's radius.</param>
+</member><member name="M:AnalogClock.Marker.#ctor(System.String,System.Single,System.Single,System.Single,System.Drawing.Color,System.Single,System.Single,System.Boolean)">
+	<param name="name">The name of the element.</param>
+	<param name="angle">The angle of the element in degrees.</param>
+	<param name="clockRadius">The cluck's radius for the element.</param>
+	<param name="col">The color of the element.</param>
+	<param name="width">The width of the element.</param>
+	<param name="relativeLength">The relative length of the 
+ element that is directly proportional to its radius.</param>
+	<param name="relativeRadius">The relative radius of the 
+ element that is directly proportional to the clock's radius.</param>
+	<param name="visible">The visibility of the element.</param>
+</member><member name="M:AnalogClock.Marker.#ctor(System.String,System.Single,System.Drawing.Color,AnalogClock.MarkerStyle,System.Boolean,System.Single,System.Single,System.Single,System.Single,AnalogClock.PaintAttributes,AnalogClock.SmoothMode,System.Object)">
+	<param name="name">The name of the element.</param>
+	<param name="angle">The angle of the element in degrees.</param>
+	<param name="col">The color of the element.</param>
+	<param name="style">The style of the element.</param>
+	<param name="visible">The visibility of the element.</param>
+	<param name="clockRadius">The cluck's radius for the element.</param>
+	<param name="width">The width of the element.</param>
+	<param name="relativeLength">The relative length of the 
+ element that is directly proportional to its radius.</param>
+	<param name="relativeRadius">The relative radius of the 
+ element that is directly proportional to the clock's radius.</param>
+	<param name="paintAttributes">The paint attributes of the element.</param>
+	<param name="smoothMode">The smoothing mode of the element.</param>
+</member><member name="M:AnalogClock.Marker.Paint(System.Windows.Forms.PaintEventArgs)">
+	<summary>
+ Paints the clock's element.
+ </summary>
+	<param name="e">A System.Windows.Forms.PaintEventArgs 
+ object that will paint the element.</param>
+</member><member name="M:AnalogClock.Marker.UpdateBasePath">
+	<summary>
+ Updates the element's base-path.
+ </summary>
+</member><member name="M:AnalogClock.Marker.RotateMarker">
+	<summary>
+ Rotate the element's base-paths.
+ </summary>
+</member><member name="M:AnalogClock.Marker.Dispose(System.Boolean)">
+	<summary>
+ Releases the unmanaged resources used by the 
+ AnalogClock.Element and optionally releases the managed resources.
+ </summary>
+	<param name="disposing">True to release both base and derived class 
+ resources; false to release only base class resources.</param>
+</member><member name="M:AnalogClock.Marker.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)">
+	<summary>
+ Raises the AnalogClock.Element.PropertyChanged event.
+ </summary>
+	<param name="e">A System.ComponentModel.PropertyChangedEventArgs 
+ that contains the event data.</param>
+</member><member name="M:AnalogClock.Marker.OnCustomElementRequest(AnalogClock.CustomElementEventArgs)">
+	<summary>
+ Raises the AnalogClock.Marker.CustomElementRequest event.
+ </summary>
+	<param name="e">An AnalogClock.CustomElementEventArgs
+ that contains the event data.</param>
+</member><member name="M:AnalogClock.Marker.ToRegular">
+	<summary>
+ Sets the element's base-path to regular style (at 12 o'clock position).
+ </summary>
+</member><member name="M:AnalogClock.Marker.ToTriangle">
+	<summary>
+ Sets the element's base-path to triangle style (at 12 o'clock position).
+ </summary>
+</member><member name="M:AnalogClock.Marker.ToRing">
+	<summary>
+ Sets the element's base-path to pointed style (at 12 o'clock position).
+ </summary>
+</member><member name="T:AnalogClock.Marker">
+	<summary>
+ Represents the AnalogClock.Marker object for AnalogClock.Clock.
+ </summary>
+</member><member name="T:AnalogClock.MarkerConverter">
+	<summary>
+ Provides a type converter for the AnalogClock.Marker.
+ </summary>
+</member><member name="P:AnalogClock.PaintEventArgs.Brush">
+	<summary>
+ Gets or sets the brush object that is used to fill the interior of the element.
+ </summary>
+</member><member name="M:AnalogClock.PaintEventArgs.#ctor(System.Drawing.Graphics,System.Drawing.Rectangle)">
+	<param name="graphics">The System.Drawing.Graphics used to paint the item.</param>
+	<param name="clipRectangle">The System.Drawing.Rectangle that represents the rectangle in which to paint.</param>
+</member><member name="T:AnalogClock.PaintEventArgs">
+	<summary>
+ Provides data for the AnalogClock.Element.ElementPainting event.
+ </summary>
+</member><member name="T:AnalogClock.PaintObject">
+	<summary>
+ Represents paint-object enumeration for AnalogClock.Clock control.
+ </summary>
+</member><member name="P:AnalogClock.PaintAttributes.PaintObject">
+	<summary>
+ Gets or sets the drawing object (Pen or Brush) for the element.
+ </summary>
+</member><member name="P:AnalogClock.PaintAttributes.PenWidth">
+	<summary>
+ Gets or sets the drawing pen's width for the element."
+ </summary>
+</member><member name="M:AnalogClock.PaintAttributes.#ctor(AnalogClock.PaintObject)">
+	<param name="obj">An AnalogClock.DrawObject enumaration value (Pen or Brush) 
+ that specifies the drawing object fo the element.</param>
+</member><member name="M:AnalogClock.PaintAttributes.#ctor(AnalogClock.PaintObject,System.Single)">
+	<param name="obj">A PaintObject enumaration value (Pen or Brush) 
+ that specifies the drawing object fo the element.</param>
+	<param name="penWidth">The drawing pen's width for the element.</param>
+</member><member name="M:AnalogClock.PaintAttributes.Equals(System.Object)">
+	<summary>
+ Determines whether the specified System.Object is equal to the current System.Object.
+ </summary>
+	<param name="obj">A System.Object to compare whit the current System.Object.</param>
+</member><member name="M:AnalogClock.PaintAttributes.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)">
+	<summary>
+ Raises the AnalogClock.PaintAttributes.PropertyChanged event.
+ </summary>
+	<param name="e">A System.ComponentModel.PropertyChangedEventArgs 
+ that contains the event data.</param>
+</member><member name="T:AnalogClock.PaintAttributes">
+	<summary>
+ Represents AnalogClock.PaintAttributes object for the elements.
+ </summary>
+</member><member name="P:AnalogClock.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:AnalogClock.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:AnalogClock.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="T:AnalogClock.CenterStyle">
+	<summary>
+ Represents center style enumeration for AnalogClock.Center object.
+ </summary>
+</member><member name="P:AnalogClock.Center.PaintAttributes">
+	<summary>
+ Gets or sets the paint attributes of the element.
+ </summary>
+</member><member name="P:AnalogClock.Center.SmoothMode">
+	<summary>
+ Gets or sets the smoothing mode of the element.
+ </summary>
+</member><member name="P:AnalogClock.Center.Style">
+	<summary>
+ Gets or sets the element's style. If the style is 'Custom', 
+ than the 'CustomElementRequest' event should be handled.
+ </summary>
+</member><member name="P:AnalogClock.Center.Path">
+	<summary>
+ Gets the element's graphics path.
+ </summary>
+</member><member name="M:AnalogClock.Center.#ctor(System.Single,System.Single)">
+	<param name="clockRadius">The cluck's radius for the element.</param>
+	<param name="relativeRadius">The element's relative radius 
+ that is directly proportional to the clock's radius.</param>
+</member><member name="M:AnalogClock.Center.#ctor(System.Drawing.Color,AnalogClock.CenterStyle,System.Boolean,System.Single,System.Single,AnalogClock.PaintAttributes,AnalogClock.SmoothMode,System.Object)">
+	<param name="col">The color of the element.</param>
+	<param name="style">The style of the element.</param>
+	<param name="visible">The visibility of the element.</param>
+	<param name="clockRadius">The cluck's radius for the element.</param>
+	<param name="relativeRadius">The relative radius of the 
+ element that is directly proportional to the clock's radius.</param>
+	<param name="paintAttributes">The paint attributes of the element.</param>
+	<param name="smoothMode">The smoothing mode of the element.</param>
+</member><member name="M:AnalogClock.Center.Paint(System.Windows.Forms.PaintEventArgs)">
+	<summary>
+ Paints the element.
+ </summary>
+	<param name="e">The System.Windows.Forms.PaintEventArgs 
+ object that will paint the element.</param>
+</member><member name="M:AnalogClock.Center.UpdateBasePath">
+	<summary>
+ Updates the element's base-path.
+ </summary>
+</member><member name="M:AnalogClock.Center.Dispose(System.Boolean)">
+	<summary>
+ Releases the unmanaged resources used by the 
+ AnalogClock.Element and optionally releases the managed resources.
+ </summary>
+	<param name="disposing">True to release both base and derived class 
+ resources; false to release only base class resources.</param>
+</member><member name="M:AnalogClock.Center.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)">
+	<summary>
+ Raises the AnalogClock.Element.PropertyChanged event.
+ </summary>
+	<param name="e">A System.ComponentModel.PropertyChangedEventArgs 
+ that contains the event data.</param>
+</member><member name="M:AnalogClock.Center.OnCustomElementRequest(AnalogClock.CustomElementEventArgs)">
+	<summary>
+ Raises the AnalogClock.Center.CustomElementRequest event.
+ </summary>
+	<param name="e">An AnalogClock.CustomElementEventArgs
+ that contains the event data.</param>
+</member><member name="M:AnalogClock.Center.ToRegular">
+	<summary>
+ Sets the element's base-path to regular style (head up position at the center of the clock).
+ </summary>
+</member><member name="M:AnalogClock.Center.ToStar8">
+	<summary>
+ Sets the element's base-path to eight-vertices star style (head up position at the center of the clock).
+ </summary>
+</member><member name="M:AnalogClock.Center.ToOctagon">
+	<summary>
+ Set the element's base-path to octagon style (head up position at the center of the clock).
+ </summary>
+</member><member name="T:AnalogClock.Center">
+	<summary>
+ Represents the AnalogClock.Center object for AnalogClock.Clock.
+ </summary>
+</member><member name="P:AnalogClock.CustomElementEventArgs.CustomPath">
+	<summary>
+ Gets or sets the custom path of the element.
+ </summary>
+</member><member name="T:AnalogClock.CustomElementEventArgs">
+	<summary>
+ Provides data for the
+ AnalogClock.Marker.CustomElementRequest, 
+ AnalogClock.Center.CustomElementRequest and
+ AnalogClock.Hand.CustomElementRequest events.
+ </summary>
+</member><member name="T:AnalogClock.ElementArrayEditor">
+	<summary>
+ Provides a type editor for the AnalogClock.Element array objects.
+ </summary>
+</member><member name="T:AnalogClock.PaintAttributesConverter">
+	<summary>
+ Provides a type converter for the AnalogClock.DrawingObject.
+ </summary>
+</member><member name="T:AnalogClock.ElementArrayConverter">
+	<summary>
+ Provides a type converter for the AnalogClock.Element array.
+ </summary>
+</member><member name="T:AnalogClock.SymbolStyle">
+	<summary>
+ Represents AnalogClock.SymbolStyle enumeration for AnalogClock.Symbol object.
+ </summary>
+</member><member name="P:AnalogClock.Symbol.Text">
+	<summary>
+ Gets or sets the element's text.
+ </summary>
+</member><member name="P:AnalogClock.Symbol.Font">
+	<summary>
+ Gets or sets the element's font.
+ </summary>
+</member><member name="P:AnalogClock.Symbol.Offset">
+	<summary>
+ Gets or sets the element's offset from the clock's-center (assuming the clock's-center at {0, 0}).
+ </summary>
+</member><member name="P:AnalogClock.Symbol.Upright">
+	<summary>
+ Gets or sets a boolean value indicating whether 
+ the element is printed in a vertical position.
+ </summary>
+</member><member name="P:AnalogClock.Symbol.Style">
+	<summary>
+ Gets or sets the element's style. If the style is 'Custom', 
+ than the 'AnalogClock.CustomSymbolPainting' event should be handled.
+ </summary>
+</member><member name="P:AnalogClock.Symbol.Rendering">
+	<summary>
+ Gets or sets the rendering mode of the element.
+ </summary>
+</member><member name="P:AnalogClock.Symbol.Index">
+	<summary>
+ Gets the index of the element.
+ </summary>
+</member><member name="M:AnalogClock.Symbol.#ctor(System.String,System.Single,System.Single,System.Single,System.Int32,System.Drawing.Point)">
+	<param name="name">The name of the element.</param>
+	<param name="clockRadius">The clock radius for the element.</param>
+	<param name="relativeRadius">The relative radius of the element 
+ that is directly proportional to the clock's radius.</param>
+	<param name="angle">The angle of the element in degrees.</param>
+	<param name="index">The index of the element in the array.</param>
+	<param name="offset">The offset of the element from the 
+ center of the clock.</param>
+</member><member name="M:AnalogClock.Symbol.#ctor(System.String,System.Single,System.String,System.Drawing.Font,System.Drawing.Color,System.Drawing.Point,System.Int32,System.Boolean,System.Boolean,AnalogClock.SymbolStyle,System.Single,System.Single,System.Drawing.Text.TextRenderingHint,System.Object)">
+	<param name="name">The name of the element.</param>
+	<param name="angle">The angle of the element in degrees.</param>
+	<param name="text">The text of the element.</param>
+	<param name="font">The font of the element.</param>
+	<param name="col">The color of the element.</param>
+	<param name="offset">The offset of the element from the 
+ center of the clock.</param>
+	<param name="index">The index of the element in the array.</param>
+	<param name="visible">The visibility of the element.</param>
+	<param name="upright">The direction of the element.</param>
+	<param name="style">The style of the element.</param>
+	<param name="clockRadius">The clock radius for the element.</param>
+	<param name="relativeRadius">The relative radius of the element 
+ that is directly proportional to the clock's radius.</param>
+	<param name="rendering">The rendering mode of the element.</param>
+</member><member name="M:AnalogClock.Symbol.Paint(System.Windows.Forms.PaintEventArgs)">
+	<summary>
+ Paints the element.
+ </summary>
+	<param name="e">A System.Windows.Forms.PaintEventArgs object that will paint the element.</param>
+</member><member name="M:AnalogClock.Symbol.Dispose(System.Boolean)">
+	<summary>
+ Releases the unmanaged resources used by the 
+ AnalogClock.Element and optionally releases the managed resources.
+ </summary>
+	<param name="disposing">True to release both base and derived class 
+ resources; false to release only base class resources.</param>
+</member><member name="M:AnalogClock.Symbol.OnCustomSymbolPainting(System.Windows.Forms.PaintEventArgs)">
+	<summary>
+ Raises the AnalogClock.Symbol.CustomSymbolPainting event.
+ </summary>
+	<param name="e">A System.Windows.Forms.PaintEventArgs
+ object that will paint the symbol.</param>
+</member><member name="T:AnalogClock.Symbol">
+	<summary>
+ Represents a AnalogClock.Symbol object for AnalogClock.Clock.
+ </summary>
+</member><member name="T:AnalogClock.SmoothMode">
+	<summary>
+ Represents smoothing mode enumeration for AnalogClock.Element.
+ </summary>
+</member><member name="P:AnalogClock.Element.Radius">
+	<summary>
+ Gets either the element's radius (from the center point to the element) or prime length (starting 
+ from the center to the end of the element) that is directly proportional to the clock's radius.
+ </summary>
+</member><member name="P:AnalogClock.Element.Name">
+	<summary>
+ Gets the name of the element.
+ </summary>
+</member><member name="P:AnalogClock.Element.PivotalPoint">
+	<summary>
+ Gets the clock's pivotal-point(the center of the element's rotation).
+ </summary>
+</member><member name="P:AnalogClock.Element.ClockRadius">
+	<summary>
+ Gets or sets the clock's radius for the element.
+ </summary>
+</member><member name="P:AnalogClock.Element.Angle">
+	<summary>
+ Gets the element's angle (in degrees).
+ </summary>
+</member><member name="P:AnalogClock.Element.RelativeRadius">
+	<summary>
+ Gets or sets either the element's relative radius (from the center point to the element) or relative prime 
+ length (starting from the center to the end of the element) that is directly proportional to the clock's radius.
+ </summary>
+</member><member name="P:AnalogClock.Element.Visible">
+	<summary>
+ Gets or sets the element's visibility.
+ </summary>
+</member><member name="P:AnalogClock.Element.Color">
+	<summary>
+ Gets or sets the element's color.
+ </summary>
+</member><member name="P:AnalogClock.Element.Tag">
+	<summary>
+ Gets or sets the object that contains data about the element.
+ </summary>
+</member><member name="M:AnalogClock.Element.#ctor(System.String,System.Single,System.Drawing.Color,System.Boolean,System.Single,System.Single,System.Object)">
+	<param name="name">The name of the element.</param>
+	<param name="angle">The angle of the element in degrees.</param>
+	<param name="col">The color of the element.</param>
+	<param name="visible">The visibility of the element.</param>
+	<param name="relativeRadius">The relative radius of the 
+ element that is directly proportional to the clock's radius.</param>
+	<param name="clockRadius">The cluck's radius for the element.</param>
+</member><member name="M:AnalogClock.Element.Paint(System.Windows.Forms.PaintEventArgs)">
+	<summary>
+ Paints the element.
+ </summary>
+	<param name="e">A System.Windows.Forms.PaintEventArgs
+ object that will paint the element.</param>
+</member><member name="M:AnalogClock.Element.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)">
+	<summary>
+ Raises the AnalogClock.Element.PropertyChanged event.
+ </summary>
+	<param name="e">A System.ComponentModel.PropertyChangedEventArgs 
+ that contains the event data.</param>
+</member><member name="M:AnalogClock.Element.OnElementPainting(AnalogClock.PaintEventArgs)">
+	<summary>
+ Raises the AnalogClock.Element.ElementPainting event.
+ </summary>
+	<param name="e">An AnalogClock.PaintEventArgs
+ object that will paint the element.</param>
+</member><member name="M:AnalogClock.Element.OnElementPainted(System.Windows.Forms.PaintEventArgs)">
+	<summary>
+ Raises the AnalogClock.Element.ElementPainted event.
+ </summary>
+	<param name="e">A System.Windows.Forms.PaintEventArgs
+ that contains the event data.</param>
+</member><member name="M:AnalogClock.Element.Dispose(System.Boolean)">
+	<summary>
+ Releases the unmanaged resources used by the 
+ AnalogClock.Element and optionally releases the managed resources.
+ </summary>
+	<param name="disposing">true to release both managed and unmanaged 
+ resources; false to release only unmanaged resources.</param>
+</member><member name="M:AnalogClock.Element.Dispose">
+	<summary>
+ Releases all resources used by the AnalogClock.Element.
+ </summary>
+</member><member name="T:AnalogClock.Element">
+	<summary>
+ Represents the AnalogClock.Element object for AnalogClock.Clock.
+ </summary>
+</member><member name="T:AnalogClock.HandMotion">
+	<summary>
+ Represents AnalogClock.HandMotion enumeration for AnalogClock.Hand object.
+ </summary>
+</member><member name="T:AnalogClock.HandStyle">
+	<summary>
+ Represents AnalogClock.HandStyle enumeration for AnalogClock.Hand object.
+ </summary>
+</member><member name="P:AnalogClock.Hand.PaintAttributes">
+	<summary>
+ Gets or sets the paint attributes of the element.
+ </summary>
+</member><member name="P:AnalogClock.Hand.Width">
+	<summary>
+ Gets or sets the element's width.
+ </summary>
+</member><member name="P:AnalogClock.Hand.SmoothMode">
+	<summary>
+ Gets or sets the smoothing mode of the element.
+ </summary>
+</member><member name="P:AnalogClock.Hand.TailRelativeRadius">
+	<summary>
+ Gets or sets the element's tail relative radius (length) that is directly proportional to the element's prime length.
+ </summary>
+</member><member name="P:AnalogClock.Hand.Style">
+	<summary>
+ Gets or sets the element's style. If the style is 'Custom', 
+ than related 'AnalogClock.CustomElementRequest' event should be handled.
+ </summary>
+</member><member name="P:AnalogClock.Hand.Value">
+	<summary>
+ Gets or sets the value that represents the element.
+ </summary>
+</member><member name="P:AnalogClock.Hand.Motion">
+	<summary>
+ Gets or sets the element's move motion.
+ </summary>
+</member><member name="P:AnalogClock.Hand.Angle">
+	<summary>
+ Gets the element's angle (in degrees).
+ </summary>
+</member><member name="P:AnalogClock.Hand.Length">
+	<summary>
+ Gets the element's entire length.
+ </summary>
+</member><member name="P:AnalogClock.Hand.PrimeLength">
+	<summary>
+ Gets the element's prime length (from the center-point to its end).
+ </summary>
+</member><member name="P:AnalogClock.Hand.TailLength">
+	<summary>
+ Gets the element's tail length.
+ </summary>
+</member><member name="P:AnalogClock.Hand.Path">
+	<summary>
+ Gets the element's graphics path.
+ </summary>
+</member><member name="M:AnalogClock.Hand.#ctor(System.String,System.Single,System.Single,System.Single,System.Single,System.Int32)">
+	<param name="name">The name of the element.</param>
+	<param name="clockRadius">The cluck's radius for the element.</param>
+	<param name="relativePrimeLength">The element's relative prime length (a portion not including 
+ the element's tail) that is directly proportional to the clock's radius.</param>
+	<param name="width">The element's width.</param>
+	<param name="tailRelativeLength">The element's tail length that is 
+ directly proportional to the element's prime length (ends at the center).</param>
+	<param name="stepAngle">An integer value that 
+ represents the element's smallest unit step in degrees.</param>
+</member><member name="M:AnalogClock.Hand.#ctor(System.String,System.Single,System.Single,System.Drawing.Color,System.Boolean,AnalogClock.PaintAttributes,AnalogClock.SmoothMode,System.Single,System.Single,System.Int32,AnalogClock.HandStyle,AnalogClock.HandMotion,System.Object)">
+	<param name="name">The name of the element.</param>
+	<param name="clockRadius">The cluck's radius for the element.</param>
+	<param name="relativeRadius">The element's relative radius (a portion not including 
+ the element's tail) that is directly proportional to the clock's radius.</param>
+	<param name="col">The color of the element.</param>
+	<param name="visible">The element's visibility.</param>
+	<param name="paintAttributes">The paint attributes of the element.</param>
+	<param name="smoothMode">The smoothing mode of the element.</param>
+	<param name="width">The element's width.</param>
+	<param name="tailRelativeRadius">The element's tail relative radius (length) that is 
+ directly proportional to the element's prime length (ends at the center).</param>
+	<param name="stepAngle">An integer value that 
+ represents the element's smallest unit step in degrees.</param>
+	<param name="style">The style of the element.</param>
+	<param name="motion">The element's move motion.</param>
+</member><member name="M:AnalogClock.Hand.Paint(System.Windows.Forms.PaintEventArgs)">
+	<summary>
+ Paints the element.
+ </summary>
+	<param name="e">A System.Windows.Forms.PaintEventArgs
+ object that will paint the element.</param>
+</member><member name="M:AnalogClock.Hand.UpdateBasePath">
+	<summary>
+ Updates the element's base-path.
+ </summary>
+</member><member name="M:AnalogClock.Hand.RotateHand">
+	<summary>
+ Rotate the element's shift-paths.
+ </summary>
+</member><member name="M:AnalogClock.Hand.Dispose(System.Boolean)">
+	<summary>
+ Releases the unmanaged resources used by the 
+ AnalogClock.Element and optionally releases the managed resources.
+ </summary>
+	<param name="disposing">True to release both base and derived class 
+ resources; false to release only base class resources.</param>
+</member><member name="M:AnalogClock.Hand.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)">
+	<summary>
+ Raises the AnalogClock.Element.PropertyChanged event.
+ </summary>
+	<param name="e">A System.ComponentModel.PropertyChangedEventArgs 
+ that contains the event data.</param>
+</member><member name="M:AnalogClock.Hand.OnCustomElementRequest(AnalogClock.CustomElementEventArgs)">
+	<summary>
+ Raises the AnalogClock.Hand.CustomElementRequest event.
+ </summary>
+	<param name="e">An AnalogClock.CustomElementEventArgs
+ that contains the event data.</param>
+</member><member name="M:AnalogClock.Hand.ToRegular">
+	<summary>
+ Sets the element's base-path to regular style (at 12 o'clock position).
+ </summary>
+</member><member name="M:AnalogClock.Hand.ToPointed">
+	<summary>
+ Sets the element's base-path to pointed style (at 12 o'clock position).
+ </summary>
+</member><member name="T:AnalogClock.Hand">
+	<summary>
+ Represents the AnalogClock.Hand object for AnalogClock.Clock.
+ </summary>
+</member><member name="T:AnalogClock.ElementConverter">
+	<summary>
+ Provides a type converter for the AnalogClock.Element.
+ </summary>
+</member><member name="T:AnalogClock.PercentageConverter">
+	<summary>
+ Provides a type converter to convert percentage values to and from a string.
+ </summary>
+</member>
+</members>
+</doc>

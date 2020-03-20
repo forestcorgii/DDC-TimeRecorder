@@ -1,0 +1,27 @@
+E:\Sean Ivan\1 - Source Codes\DDC Time Recorder\Time Recorder v2.0\obj\Debug\Time Recorder v2.0.vbprojResolveAssemblyReference.cache
+E:\Sean Ivan\1 - Source Codes\DDC Time Recorder\Time Recorder v2.0\obj\Debug\Interop.ADOX.dll
+E:\Sean Ivan\1 - Source Codes\DDC Time Recorder\Time Recorder v2.0\obj\Debug\Time Recorder v2.0.vbproj.ResolveComReference.cache
+E:\Sean Ivan\1 - Source Codes\DDC Time Recorder\Time Recorder v2.0\obj\Debug\Time_Recorder_v2._0.frmMain.resources
+E:\Sean Ivan\1 - Source Codes\DDC Time Recorder\Time Recorder v2.0\obj\Debug\Time_Recorder_v2._0.FailedSplash.resources
+E:\Sean Ivan\1 - Source Codes\DDC Time Recorder\Time Recorder v2.0\obj\Debug\Time_Recorder_v2._0.AddingUser.frmAddUser.resources
+E:\Sean Ivan\1 - Source Codes\DDC Time Recorder\Time Recorder v2.0\obj\Debug\Time_Recorder_v2._0.frmExporter.resources
+E:\Sean Ivan\1 - Source Codes\DDC Time Recorder\Time Recorder v2.0\obj\Debug\Time_Recorder_v2._0.frmSettings.resources
+E:\Sean Ivan\1 - Source Codes\DDC Time Recorder\Time Recorder v2.0\obj\Debug\Time_Recorder_v2._0.frmUserProfiles.resources
+E:\Sean Ivan\1 - Source Codes\DDC Time Recorder\Time Recorder v2.0\obj\Debug\Time_Recorder_v2._0.SuccessSplash.resources
+E:\Sean Ivan\1 - Source Codes\DDC Time Recorder\Time Recorder v2.0\obj\Debug\Time_Recorder_v2._0.frmPrintReader.resources
+E:\Sean Ivan\1 - Source Codes\DDC Time Recorder\Time Recorder v2.0\obj\Debug\Time_Recorder_v2._0.frmRedirect.resources
+E:\Sean Ivan\1 - Source Codes\DDC Time Recorder\Time Recorder v2.0\obj\Debug\Time_Recorder_v2._0.AddingUser.frmSetup.resources
+E:\Sean Ivan\1 - Source Codes\DDC Time Recorder\Time Recorder v2.0\obj\Debug\Time_Recorder_v2._0.Resources.resources
+E:\Sean Ivan\1 - Source Codes\DDC Time Recorder\Time Recorder v2.0\obj\Debug\Time Recorder v2.0.vbproj.GenerateResource.Cache
+E:\Sean Ivan\1 - Source Codes\DDC Time Recorder\Time Recorder v2.0\bin\Debug\Time Recorder v2.0.exe.config
+E:\Sean Ivan\1 - Source Codes\DDC Time Recorder\Time Recorder v2.0\bin\Debug\Time Recorder v2.0.exe
+E:\Sean Ivan\1 - Source Codes\DDC Time Recorder\Time Recorder v2.0\bin\Debug\Time Recorder v2.0.pdb
+E:\Sean Ivan\1 - Source Codes\DDC Time Recorder\Time Recorder v2.0\bin\Debug\AnalogClockControl.dll
+E:\Sean Ivan\1 - Source Codes\DDC Time Recorder\Time Recorder v2.0\bin\Debug\Custom-Components.dll
+E:\Sean Ivan\1 - Source Codes\DDC Time Recorder\Time Recorder v2.0\bin\Debug\Neurotec.Biometrics.Nffv.dll
+E:\Sean Ivan\1 - Source Codes\DDC Time Recorder\Time Recorder v2.0\bin\Debug\Custom-Components.pdb
+E:\Sean Ivan\1 - Source Codes\DDC Time Recorder\Time Recorder v2.0\bin\Debug\Custom-Components.xml
+E:\Sean Ivan\1 - Source Codes\DDC Time Recorder\Time Recorder v2.0\bin\Debug\AnalogClockControl.pdb
+E:\Sean Ivan\1 - Source Codes\DDC Time Recorder\Time Recorder v2.0\bin\Debug\AnalogClockControl.xml
+E:\Sean Ivan\1 - Source Codes\DDC Time Recorder\Time Recorder v2.0\obj\Debug\Time Recorder v2.0.exe
+E:\Sean Ivan\1 - Source Codes\DDC Time Recorder\Time Recorder v2.0\obj\Debug\Time Recorder v2.0.pdb

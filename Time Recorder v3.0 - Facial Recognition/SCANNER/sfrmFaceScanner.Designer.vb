@@ -23,7 +23,7 @@ Partial Class sfrmFaceScanner
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.pixDetector = New OpenCvSharp.UserInterface.PictureBoxIpl()
-        Me.pb1 = New ModifiedComponents.ArcProgressbar()
+        Me.pb1 = New CustomComponents.ArcProgressbar()
         CType(Me.pixDetector, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -42,7 +42,7 @@ Partial Class sfrmFaceScanner
         Me.pb1.Location = New System.Drawing.Point(566, 376)
         Me.pb1.Margin = New System.Windows.Forms.Padding(0)
         Me.pb1.MarqueeSpeed = 10
-        Me.pb1.MarqueeType = ModifiedComponents.ArcProgressbar.mrqType.Process1
+        Me.pb1.MarqueeType = CustomComponents.ArcProgressbar.mrqType.Process1
         Me.pb1.MaxValue = 600.0R
         Me.pb1.MinimumSize = New System.Drawing.Size(32, 32)
         Me.pb1.Name = "pb1"
@@ -54,7 +54,7 @@ Partial Class sfrmFaceScanner
         Me.pb1.ProcessForeColor = System.Drawing.Color.Maroon
         Me.pb1.ProcessMargin = 1
         Me.pb1.ProgressTextEnable = False
-        Me.pb1.ProgressType = ModifiedComponents.ArcProgressbar.pType.Marquee
+        Me.pb1.ProgressType = CustomComponents.ArcProgressbar.pType.Marquee
         Me.pb1.Size = New System.Drawing.Size(70, 70)
         Me.pb1.startAngle = 0.0!
         Me.pb1.StartMarquee = True
@@ -76,5 +76,5 @@ Partial Class sfrmFaceScanner
 
     End Sub
     Friend WithEvents pixDetector As OpenCvSharp.UserInterface.PictureBoxIpl
-    Friend WithEvents pb1 As ModifiedComponents.ArcProgressbar
+    Friend WithEvents pb1 As CustomComponents.ArcProgressbar
 End Class
