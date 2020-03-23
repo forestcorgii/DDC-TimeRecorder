@@ -48,30 +48,32 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="ICSharpCode.SharpZipLib">
-      <HintPath>..\..\..\DOWNLOADED\DLLs\npoi\ICSharpCode.SharpZipLib.dll</HintPath>
+      <HintPath>..\DATA\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="NPOI">
-      <HintPath>..\..\..\DOWNLOADED\DLLs\npoi\NPOI.dll</HintPath>
+      <HintPath>..\DATA\NPOI.dll</HintPath>
     </Reference>
     <Reference Include="NPOI.OOXML">
-      <HintPath>..\..\..\DOWNLOADED\DLLs\npoi\NPOI.OOXML.dll</HintPath>
+      <HintPath>..\DATA\NPOI.OOXML.dll</HintPath>
     </Reference>
     <Reference Include="NPOI.OpenXml4Net">
-      <HintPath>..\..\..\DOWNLOADED\DLLs\npoi\NPOI.OpenXml4Net.dll</HintPath>
+      <HintPath>..\DATA\NPOI.OpenXml4Net.dll</HintPath>
     </Reference>
     <Reference Include="NPOI.OpenXmlFormats">
-      <HintPath>..\..\..\DOWNLOADED\DLLs\npoi\NPOI.OpenXmlFormats.dll</HintPath>
+      <HintPath>..\DATA\NPOI.OpenXmlFormats.dll</HintPath>
     </Reference>
-    <Reference Include="SocialExplorer.FastDBF, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\FastDBF\FastDBF\bin\Debug\SocialExplorer.FastDBF.dll</HintPath>
+    <Reference Include="SocialExplorer.FastDBF">
+      <HintPath>..\DATA\SocialExplorer.FastDBF.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>..\DATA\System.Data.SQLite.dll</HintPath>
+    </Reference>
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />

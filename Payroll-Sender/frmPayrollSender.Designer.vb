@@ -38,6 +38,10 @@ Partial Class frmPayrollSender
         Me.clFilePath = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.clStart = New System.Windows.Forms.DataGridViewButtonColumn()
         Me.clStatus = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.dtFrom = New System.Windows.Forms.DateTimePicker()
+        Me.dtTo = New System.Windows.Forms.DateTimePicker()
         Me.MenuStrip1.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
         CType(Me.dgv, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -120,10 +124,10 @@ Partial Class frmPayrollSender
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgv.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.clFileName, Me.clFilePath, Me.clStart, Me.clStatus})
-        Me.dgv.Location = New System.Drawing.Point(1, 27)
+        Me.dgv.Location = New System.Drawing.Point(1, 50)
         Me.dgv.Name = "dgv"
         Me.dgv.RowHeadersVisible = False
-        Me.dgv.Size = New System.Drawing.Size(642, 222)
+        Me.dgv.Size = New System.Drawing.Size(642, 199)
         Me.dgv.TabIndex = 5
         '
         'clFileName
@@ -154,11 +158,51 @@ Partial Class frmPayrollSender
         Me.clStatus.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
         Me.clStatus.Width = 75
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(2, 32)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(70, 13)
+        Me.Label2.TabIndex = 6
+        Me.Label2.Text = "Payroll Date: "
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(152, 32)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(16, 13)
+        Me.Label3.TabIndex = 7
+        Me.Label3.Text = " - "
+        '
+        'dtFrom
+        '
+        Me.dtFrom.CustomFormat = "yyyy-MM-dd"
+        Me.dtFrom.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.dtFrom.Location = New System.Drawing.Point(69, 26)
+        Me.dtFrom.Name = "dtFrom"
+        Me.dtFrom.Size = New System.Drawing.Size(77, 20)
+        Me.dtFrom.TabIndex = 8
+        '
+        'dtTo
+        '
+        Me.dtTo.CustomFormat = "yyyy-MM-dd"
+        Me.dtTo.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.dtTo.Location = New System.Drawing.Point(174, 26)
+        Me.dtTo.Name = "dtTo"
+        Me.dtTo.Size = New System.Drawing.Size(77, 20)
+        Me.dtTo.TabIndex = 9
+        '
         'frmPayrollSender
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(644, 274)
+        Me.Controls.Add(Me.dtTo)
+        Me.Controls.Add(Me.dtFrom)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.dgv)
         Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.MenuStrip1)
@@ -188,5 +232,8 @@ Partial Class frmPayrollSender
     Friend WithEvents clFilePath As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents clStart As System.Windows.Forms.DataGridViewButtonColumn
     Friend WithEvents clStatus As System.Windows.Forms.DataGridViewTextBoxColumn
-
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents dtFrom As DateTimePicker
+    Friend WithEvents dtTo As DateTimePicker
 End Class

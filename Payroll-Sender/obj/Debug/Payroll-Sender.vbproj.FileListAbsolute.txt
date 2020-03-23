@@ -1,0 +1,14 @@
+C:\1 - Source Codes\DDC-TimeRecorder\Payroll-Sender\obj\Debug\Payroll-Sender.vbprojResolveAssemblyReference.cache
+C:\1 - Source Codes\DDC-TimeRecorder\Payroll-Sender\obj\Debug\PayrollSender.frmPayrollSender.resources
+C:\1 - Source Codes\DDC-TimeRecorder\Payroll-Sender\obj\Debug\PayrollSender.Resources.resources
+C:\1 - Source Codes\DDC-TimeRecorder\Payroll-Sender\obj\Debug\PayrollSender.sfrmConfiguration.resources
+C:\1 - Source Codes\DDC-TimeRecorder\Payroll-Sender\obj\Debug\Payroll-Sender.vbproj.GenerateResource.cache
+C:\1 - Source Codes\DDC-TimeRecorder\Payroll-Sender\obj\Debug\Payroll-Sender.vbproj.CoreCompileInputs.cache
+C:\2 - Bins\DDC-TimeRecorder\Payroll-Sender\Debug\PayrollSender.exe.config
+C:\2 - Bins\DDC-TimeRecorder\Payroll-Sender\Debug\PayrollSender.exe
+C:\2 - Bins\DDC-TimeRecorder\Payroll-Sender\Debug\PayrollSender.pdb
+C:\2 - Bins\DDC-TimeRecorder\Payroll-Sender\Debug\PayrollSender.xml
+C:\1 - Source Codes\DDC-TimeRecorder\Payroll-Sender\obj\Debug\Payroll-Sender.vbproj.CopyComplete
+C:\1 - Source Codes\DDC-TimeRecorder\Payroll-Sender\obj\Debug\PayrollSender.exe
+C:\1 - Source Codes\DDC-TimeRecorder\Payroll-Sender\obj\Debug\PayrollSender.xml
+C:\1 - Source Codes\DDC-TimeRecorder\Payroll-Sender\obj\Debug\PayrollSender.pdb

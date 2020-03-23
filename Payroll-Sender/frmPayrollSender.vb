@@ -83,7 +83,7 @@ Public Class frmPayrollSender
 
     Private Sub RequestTimeSheet()
         Dim rawPayrollData As String = "" '= SendAPIMessage("", "http://192.168.23.51/hrms/pages/send_timelog")
-        Dim tm As New clss With {.date_from = "2020-02-20", .date_to = "2020-03-04"}
+        Dim tm As New clss With {.date_from = dtFrom.Value.ToString("yyyy-MM-dd"), .date_to = dtTo.Value.ToString("yyyy-MM-dd")} '{.date_from = "2020-02-20", .date_to = "2020-03-04"}
         Dim postData As String = "postData=" & JsonConvert.SerializeObject(tm, Formatting.Indented)
 
         rawPayrollData = SendAPIMessage(postData, "http://idcsi-officesuites.com:8080/mail/pages/send_timelog")
@@ -105,18 +105,18 @@ Public Class frmPayrollSender
                 payroll_codes.AddRange(bcPayCodes)
             Next
 
-            'Dim tmp As Date = Now 'tms(0).logs.log_date
-            'If tmp.Day >= 5 And tmp.Day <= 19 Then
-            '    payrollDate = String.Format("{0}{1}{2}", tmp.Month, 30, tmp.Year)
-            'ElseIf tmp.Day < 5 Then
-            '    tmp = tmp.AddMonths(-1)
-            '    If tmp.Month = 12 Then
-            '        tmp = tmp.AddYears(-1)
-            '    End If
-            '    payrollDate = String.Format("{0}{1}{2}", tmp.Month - 1, 15, tmp.Year)
-            'ElseIf tmp.Day > 19 Then
-            '    payrollDate = String.Format("{0}{1}{2}", tmp.Month, 15, tmp.Year)
-            'End If
+            Dim tmp As Date = Now 'tms(0).logs.log_date
+            If tmp.Day >= 5 And tmp.Day <= 19 Then
+                payrollDate = String.Format("{0:00}{1:00}{2}", tmp.Month, 30, tmp.Year)
+            ElseIf tmp.Day < 5 Then
+                tmp = tmp.AddMonths(-1)
+                If tmp.Month = 12 Then
+                    tmp = tmp.AddYears(-1)
+                End If
+                payrollDate = String.Format("{0:00}{1:00}{2}", tmp.Month - 1, 15, tmp.Year)
+            ElseIf tmp.Day > 19 Then
+                payrollDate = String.Format("{0:00}{1:00}{2}", tmp.Month, 15, tmp.Year)
+            End If
 
             For i As Integer = 0 To payroll_codes.Count - 1
                 writeExcel(payroll_codes(i), payrollDate)
@@ -148,22 +148,19 @@ Public Class frmPayrollSender
     End Sub
 
     Private Sub writeExcel(payroll_codes As List(Of clsNewPayroll), payrollDate As String)
-        Dim pays As New ForPAY
-        For Each payroll_code As clsNewPayroll In payroll_codes
-            pays.Employees.Add(payroll_code)
-        Next
 
 
-        If pays.Employees.Count > 0 Then
-            Dim pCode As String = pays.Employees(0).payroll_code
+        If payroll_codes.Count > 0 Then
+            Dim pCode As String = payroll_codes(0).payroll_code
             If pCode = "" Then pCode = "NOCODE"
-            Dim bankCat As String = pays.Employees(0).bank_category
+            Dim bankCat As String = payroll_codes(0).bank_category
             If bankCat = "" Then bankCat = "NOBANKCATEGORY"
 
             Dim filename As String = String.Format("{0}_{1}_{2}", pCode, bankCat, payrollDate)
-            Dim filePath As String = String.Format("{0}\Payrolls\{1}.xlsx", bin, filename)
+            Dim filePath As String = String.Format("{0}\Payrolls\{1}.DBF", bin, filename)
             If Not payrollNameExist(filename) Then
-                pays.WriteTimesheetExcelReport(filePath, pCode, bankCat, payrollDate)
+                SaveToDBF(filePath, payroll_codes)
+                '  pays.WriteTimesheetExcelReport(filePath, pCode, bankCat, payrollDate)
                 dgv.Invoke(Sub() dgv.Rows.Add(filename, filePath, "Send", "Waiting"))
             End If
         End If
@@ -199,7 +196,7 @@ Public Class frmPayrollSender
     Public dbfFlds As String() = {"DATA SmallInt", "CODE SmallInt", "ID Text(4)", "REG_HRS Float", "R_OT Float", "RD_OT Float", "RD_8 Float", _
                                   "HOL_OT Float", "HOL_OT8 Float", "ND Float", "ABS_TAR Float", "ADJUST1 Float", "GROSS_PAY Float", "ADJUST2 Float", _
                                   "TAX Float", "SSS_EE Float", "SSS_ER Float", "PHIC Float", "NET_PAY Float", "REG_PAY Float", "TAG Text(1)"}
-    Public Sub SaveToDBF(dbfPath As String, values As List(Of clsPayroll))
+    Public Sub SaveToDBF(dbfPath As String, values As List(Of clsNewPayroll))
         Dim ExportedDbf = New SocialExplorer.IO.FastDBF.DbfFile(System.Text.Encoding.GetEncoding(1252))
         ExportedDbf.Open(dbfPath, FileMode.Create)
 
@@ -207,9 +204,9 @@ Public Class frmPayrollSender
             Dim fldinf As String() = col.Split(" ")
             Select Case fldinf(1).ToUpper
                 Case "FLOAT"
-                    ExportedDbf.Header.AddColumn(New FastDBF.DbfColumn(fldinf(0), FastDBF.DbfColumn.DbfColumnType.Float, 0, 0))
+                    ExportedDbf.Header.AddColumn(New FastDBF.DbfColumn(fldinf(0), FastDBF.DbfColumn.DbfColumnType.Float, 10, 2))
                 Case "SMALLINT"
-                    ExportedDbf.Header.AddColumn(New FastDBF.DbfColumn(fldinf(0), FastDBF.DbfColumn.DbfColumnType.Integer, 0, 0))
+                    ExportedDbf.Header.AddColumn(New FastDBF.DbfColumn(fldinf(0), FastDBF.DbfColumn.DbfColumnType.Integer, 10, 0))
                 Case "TEXT(4)"
                     ExportedDbf.Header.AddColumn(New FastDBF.DbfColumn(fldinf(0), FastDBF.DbfColumn.DbfColumnType.Character, 4, 0))
                 Case "TEXT(1)"
@@ -221,17 +218,18 @@ Public Class frmPayrollSender
 
             Dim NewRec = New SocialExplorer.IO.FastDBF.DbfRecord(ExportedDbf.Header)
 
-            'For c As Integer = 0 To dbfFlds.Length - 1
 
-            '    NewRec(c) = dt.Rows(r)(col).ToString
-            '    ColumnCounter = ColumnCounter + 1
-            'Next
+            For c As Integer = 0 To dbfFlds.Length - 1
+                Dim fldinf As String() = dbfFlds(c).Split(" ")
+                NewRec(c) = values(r).GetValue(fldinf(0))
+                'ColumnCounter = ColumnCounter + 1
+            Next
 
             ExportedDbf.Write(NewRec, True)
 
         Next
 
-        ExportedDbf.Close()
+            ExportedDbf.Close()
     End Sub
 
     Private lastListing As Date

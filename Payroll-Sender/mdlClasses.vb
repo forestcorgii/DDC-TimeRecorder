@@ -434,19 +434,20 @@ Public Class clsNewPayroll
             Case "ID"
                 Return employee_id
             Case "REG_HRS"
-                Return logs(0).total_hours
+                Return logs(0).total_hours.ToString("0.00")
             Case "R_OT"
-                Return logs(0).total_ots
+                Return logs(0).total_ots.ToString("0.00")
             Case "RD_OT"
-                Return logs(0).total_rd_ot
+                Return logs(0).total_rd_ot.ToString("0.00")
             Case "RD_8"
 
             Case "HOL_OT"
-                Return logs(0).total_h_ot
+                Return logs(0).total_h_ot.ToString("0.00")
             Case "HOL_OT8"
             Case "ND"
-                Return logs(0).total_nd
+                Return logs(0).total_nd.ToString("0.00")
             Case "ABS_TAR"
+                Return logs(0).total_tardy.ToString("0.00")
             Case "ADJUST1"
             Case "GROSS_PAY"
             Case "ADJUST2"
@@ -458,6 +459,7 @@ Public Class clsNewPayroll
             Case "REG_PAY"
             Case "TAG"
         End Select
+        Return ""
     End Function
 
 End Class
@@ -539,7 +541,7 @@ Public Class ForPAY
                     '     payroll.Compute()
                     'createCellLines(rowidx, {rowidx - 3, payroll.employee_id, payroll.Fullname, payroll.location, payroll.TotalRegularHours, payroll.TotalRegularOT, _
                     '                         payroll.TotalSunday, payroll.TotalHoliday, payroll.TotalNightDifferential, payroll.TotalTardy}, nSheet)
-                    createCellLines(rowidx, {rowidx - 3, payroll.employee_id, payroll.Fullname, payroll.location, payroll.logs(0).total_hours, payroll.logs(0).total_ots, _
+                    createCellLines(rowidx, {rowidx - 3, payroll.employee_id, payroll.Fullname, payroll.location, payroll.logs(0).total_hours, payroll.logs(0).total_ots,
                                              payroll.logs(0).total_rd_ot, payroll.logs(0).total_h_ot, payroll.logs(0).total_nd, payroll.logs(0).total_tardy}, nSheet)
                     rowidx += 1
                 End If
